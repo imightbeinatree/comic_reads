@@ -10,12 +10,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110630181740) do
+ActiveRecord::Schema.define(:version => 20110630182903) do
 
   create_table "comics", :force => true do |t|
     t.string   "title"
     t.string   "year_started", :limit => 4
     t.string   "publisher"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "issue_formats", :force => true do |t|
+    t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

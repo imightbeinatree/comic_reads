@@ -14,7 +14,7 @@ describe Comic do
 
   before(:each) do
     @comic = Comic.new
-    @comic2 = Comic.new( {:title => "Batman"} )
+    @comic2 = Comic.new( {:title => "Zatanna"} )
   end
 
   it "should require a title" do
