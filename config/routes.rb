@@ -1,5 +1,9 @@
 ComicReads::Application.routes.draw do
-  # The priority is based upon order of creation:
+  resources :roles
+
+  devise_for :users,  :controllers => { :registrations => "registrations" }
+resources :users
+root :to => 'welcome#index'  # The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:

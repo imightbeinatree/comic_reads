@@ -29,3 +29,13 @@ gem 'devisable', '0.1.2'
 # group :development, :test do
 #   gem 'webrat'
 # end
+gem "devise", "1.1.5"
+gem "warden_oauth", "0.1.1", :git => "git://github.com/scottsampson/warden_oauth.git"
+gem "cancan", "1.5.1"
+gem "json_pure", "1.5.1"
+gem "twitter_oauth"
+gem "capybara"
+gem "database_cleaner"
+gem "cucumber-rails"
+gem "cucumber"
+gem "rspec-rails"
